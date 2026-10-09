@@ -1,4 +1,5 @@
 <Solution>
+  <Folder Name="/src/">
   <Project Path="src/Squirrel.Abstractions/Squirrel.Abstractions.csproj" />
   <Project Path="src/Squirrel.AspireIntegrations/Squirrel.AspireIntegrations.csproj" />
   <Project Path="src/Squirrel.Caching/Squirrel.Caching.csproj" />
@@ -21,6 +22,8 @@
   <Project Path="src/Squirrel.SerilogLogging/Squirrel.SerilogLogging.csproj" />
   <Project Path="src/Squirrel.Validation/Squirrel.Validation.csproj" />
   <Project Path="src/Squirrel.Web/Squirrel.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
   <Project Path="tests/Squirrel.Abstractions/Squirrel.Abstractions.IntegrationTests/Squirrel.Abstractions.IntegrationTests.csproj" />
   <Project Path="tests/Squirrel.Abstractions/Squirrel.Abstractions.UnitTests/Squirrel.Abstractions.UnitTests.csproj" />
   <Project Path="tests/Squirrel.AspireIntegrations/Squirrel.AspireIntegrations.IntegrationTests/Squirrel.AspireIntegrations.IntegrationTests.csproj" />
@@ -66,4 +69,70 @@
   <Project Path="tests/Squirrel.Web/Squirrel.Web.IntegrationTests/Squirrel.Web.IntegrationTests.csproj" />
   <Project Path="tests/Squirrel.Web/Squirrel.Web.UnitTests/Squirrel.Web.UnitTests.csproj" />
   <Project Path="tests/Shared/Tests.Shared/Tests.Shared.csproj" />
+  </Folder>
+  <Folder Name="/solution items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="LICENSE" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+    <File Path="stylecop.json" />
+    <File Path="version.json" />
+    <Folder Name="/solution items/.github/">
+      <File Path=".github/release-drafter.yml" />
+      <Folder Name="/solution items/.github/workflows/">
+        <File Path=".github/workflows/build-and-publish.yml" />
+        <File Path=".github/workflows/deploy-docs.yml" />
+        <File Path=".github/workflows/labeler.yml" />
+      </Folder>
+    </Folder>
+    <Folder Name="/solution items/docs/">
+      <File Path="docs/index.md" />
+      <File Path="docs/package-lock.json" />
+      <File Path="docs/package.json" />
+      <Folder Name="/solution items/docs/.vitepress/">
+        <File Path="docs/.vitepress/config.ts" />
+      </Folder>
+      <Folder Name="/solution items/docs/components/">
+        <File Path="docs/components/abstractions.md" />
+        <File Path="docs/components/aspire-integrations.md" />
+        <File Path="docs/components/caching-azure-redis.md" />
+        <File Path="docs/components/caching.md" />
+        <File Path="docs/components/core.md" />
+        <File Path="docs/components/email.md" />
+        <File Path="docs/components/health-check.md" />
+        <File Path="docs/components/openapi.md" />
+        <File Path="docs/components/opentelemetry.md" />
+        <File Path="docs/components/persistence-efcore-azure-cosmosdb.md" />
+        <File Path="docs/components/persistence-efcore-azure-postgres.md" />
+        <File Path="docs/components/persistence-efcore-postgres.md" />
+        <File Path="docs/components/persistence-eventstoredb.md" />
+        <File Path="docs/components/persistence-marten.md" />
+        <File Path="docs/components/persistence-mongo.md" />
+        <File Path="docs/components/resiliency.md" />
+        <File Path="docs/components/security.md" />
+        <File Path="docs/components/serialization.md" />
+        <File Path="docs/components/serilog-logging.md" />
+        <File Path="docs/components/validation.md" />
+        <File Path="docs/components/web.md" />
+        <File Path="docs/components/wolverine.md" />
+      </Folder>
+      <Folder Name="/solution items/docs/guide/">
+        <File Path="docs/guide/architecture.md" />
+        <File Path="docs/guide/development.md" />
+        <File Path="docs/guide/quickstart.md" />
+        <File Path="docs/guide/versioning.md" />
+      </Folder>
+      <Folder Name="/solution items/docs/reference/">
+        <File Path="docs/reference/packages.md" />
+      </Folder>
+    </Folder>
+    <Folder Name="/solution items/scripts/">
+      <File Path="scripts/calculate-version.sh" />
+      <File Path="scripts/release-version.sh" />
+    </Folder>
+  </Folder>
 </Solution>
