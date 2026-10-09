@@ -1,11 +1,11 @@
-# CloudNativeKit.Validation
+# Squirrel.Validation
 
 Assembly scanning and registration for FluentValidation validators.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Validation
+dotnet add package Squirrel.Validation
 ```
 
 ## Register

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Squirrel.Core\Squirrel.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.MongoDb" />
+    <PackageReference Include="MongoDB.Driver.Core.Extensions.DiagnosticSources" />
+  </ItemGroup>
+  
+  <ItemGroup Label="Aspire Packages">
+    <PackageReference Include="Aspire.MongoDB.Driver.v3" />
+  </ItemGroup>
+
+</Project>

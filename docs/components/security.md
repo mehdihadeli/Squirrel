@@ -1,11 +1,11 @@
-# CloudNativeKit.Security
+# Squirrel.Security
 
 JWT and API-key authentication helpers for ASP.NET Core services.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Security
+dotnet add package Squirrel.Security
 ```
 
 ## JWT registration

@@ -1,11 +1,11 @@
-# CloudNativeKit.OpenApi
+# Squirrel.OpenApi
 
 OpenAPI, Swagger, API versioning, and AsyncAPI registration helpers.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.OpenApi
+dotnet add package Squirrel.OpenApi
 ```
 
 ## Swagger registration

@@ -1,6 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\src\CloudNativeKit.Persistence.EfCore.AzurePostgres\CloudNativeKit.Persistence.EfCore.AzurePostgres.csproj" />
-    <ProjectReference Include="..\..\Shared\Tests.Shared\Tests.Shared.csproj" />
-  </ItemGroup>
-</Project>

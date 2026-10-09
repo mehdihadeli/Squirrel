@@ -1,6 +1,6 @@
 # Versioning and releases
 
-CloudNativeKit uses [Nerdbank.GitVersioning (NBGV)](https://dotnet.github.io/Nerdbank.GitVersioning/)
+Squirrel uses [Nerdbank.GitVersioning (NBGV)](https://dotnet.github.io/Nerdbank.GitVersioning/)
 to version every package from the committed `version.json` file and Git
 history. All packages in a release use the same `SemVer2` version. CI adds a
 UTC `YYDDD` date and GitHub Actions run number to preview and RC packages for
@@ -28,7 +28,7 @@ Install NBGV once, then use the repository helper:
 
 ```bash
 dotnet tool install --global nbgv
-./release-version.sh prepare-train 1.0.0
+./scripts/release-version.sh prepare-train 1.0.0
 ```
 
 The helper uses NBGV's `{height}` placeholder, so Git history determines the
@@ -36,8 +36,8 @@ preview and RC ordinals. Commit that change in a pull request. For stabilization
 and stable release:
 
 ```bash
-./release-version.sh prepare-rc 1.0.0
-./release-version.sh prepare-stable 1.0.0
+./scripts/release-version.sh prepare-rc 1.0.0
+./scripts/release-version.sh prepare-stable 1.0.0
 ```
 
 Check the calculated version with:
@@ -71,7 +71,7 @@ Create tags only from the exact approved `main` commit:
 git checkout main
 git pull --ff-only
 nbgv get-version -v SemVer2
-./release-version.sh tag
+./scripts/release-version.sh tag
 git push origin v1.0.0-rc.1
 ```
 
@@ -79,7 +79,7 @@ Use the actual tag printed by `nbgv tag`. The tag triggers the same build and
 test workflow and publishes the matching Release Drafter draft.
 
 After stable publication, begin the next release line with a new preview
-version, for example `./release-version.sh prepare-train 1.1.0`.
+version, for example `./scripts/release-version.sh prepare-train 1.1.0`.
 
 ## Release notes
 

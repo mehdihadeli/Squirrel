@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Squirrel.Core\Squirrel.Core.csproj" />
+    <ProjectReference Include="..\Squirrel.OpenTelemetry\Squirrel.OpenTelemetry.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Aspire.EventStore" />
+    <PackageReference Include="EventStore.Client.Grpc.Streams" />
+  </ItemGroup>
+</Project>

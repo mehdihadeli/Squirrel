@@ -1,11 +1,11 @@
-# CloudNativeKit.Web
+# Squirrel.Web
 
 ASP.NET Core web conventions for CORS, compression, versioning, problem details, rate limiting, and minimal APIs.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Web
+dotnet add package Squirrel.Web
 ```
 
 ## Register common web services
@@ -22,4 +22,4 @@ var app = builder.Build();
 app.UseDefaultCors();
 ```
 
-Use `AddMinimalEndpoints` and `MapMinimalEndpoints` when the service follows the CloudNativeKit minimal endpoint/module conventions. The package also provides typed problem results and command/query endpoint mapping helpers.
+Use `AddMinimalEndpoints` and `MapMinimalEndpoints` when the service follows the Squirrel minimal endpoint/module conventions. The package also provides typed problem results and command/query endpoint mapping helpers.

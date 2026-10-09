@@ -1,11 +1,11 @@
-# CloudNativeKit.HealthCheck
+# Squirrel.HealthCheck
 
 Default ASP.NET Core health-check registration and endpoint conventions.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.HealthCheck
+dotnet add package Squirrel.HealthCheck
 ```
 
 ## Register

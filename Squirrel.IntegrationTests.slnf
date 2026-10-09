@@ -1,0 +1,30 @@
+{
+  "solution": {
+    "path": "Squirrel.slnx",
+    "projects": [
+      "tests\\Squirrel.Abstractions\\Squirrel.Abstractions.IntegrationTests\\Squirrel.Abstractions.IntegrationTests.csproj",
+      "tests\\Squirrel.AspireIntegrations\\Squirrel.AspireIntegrations.IntegrationTests\\Squirrel.AspireIntegrations.IntegrationTests.csproj",
+      "tests\\Squirrel.Caching.AzureRedis\\Squirrel.Caching.AzureRedis.IntegrationTests\\Squirrel.Caching.AzureRedis.IntegrationTests.csproj",
+      "tests\\Squirrel.Caching\\Squirrel.Caching.IntegrationTests\\Squirrel.Caching.IntegrationTests.csproj",
+      "tests\\Squirrel.Core\\Squirrel.Core.IntegrationTests\\Squirrel.Core.IntegrationTests.csproj",
+      "tests\\Squirrel.Email\\Squirrel.Email.IntegrationTests\\Squirrel.Email.IntegrationTests.csproj",
+      "tests\\Squirrel.HealthCheck\\Squirrel.HealthCheck.IntegrationTests\\Squirrel.HealthCheck.IntegrationTests.csproj",
+      "tests\\Squirrel.Integration.Wolverine\\Squirrel.Integration.Wolverine.IntegrationTests\\Squirrel.Integration.Wolverine.IntegrationTests.csproj",
+      "tests\\Squirrel.OpenApi\\Squirrel.OpenApi.IntegrationTests\\Squirrel.OpenApi.IntegrationTests.csproj",
+      "tests\\Squirrel.OpenTelemetry\\Squirrel.OpenTelemetry.IntegrationTests\\Squirrel.OpenTelemetry.IntegrationTests.csproj",
+      "tests\\Squirrel.Persistence.EfCore.AzureCosmosDB\\Squirrel.Persistence.EfCore.AzureCosmosDB.IntegrationTests\\Squirrel.Persistence.EfCore.AzureCosmosDB.IntegrationTests.csproj",
+      "tests\\Squirrel.Persistence.EfCore.AzurePostgres\\Squirrel.Persistence.EfCore.AzurePostgres.IntegrationTests\\Squirrel.Persistence.EfCore.AzurePostgres.IntegrationTests.csproj",
+      "tests\\Squirrel.Persistence.EfCore.Postgres\\Squirrel.Persistence.EfCore.Postgres.IntegrationTests\\Squirrel.Persistence.EfCore.Postgres.IntegrationTests.csproj",
+      "tests\\Squirrel.Persistence.EventStoreDB\\Squirrel.Persistence.EventStoreDB.IntegrationTests\\Squirrel.Persistence.EventStoreDB.IntegrationTests.csproj",
+      "tests\\Squirrel.Persistence.Marten\\Squirrel.Persistence.Marten.IntegrationTests\\Squirrel.Persistence.Marten.IntegrationTests.csproj",
+      "tests\\Squirrel.Persistence.Mongo\\Squirrel.Persistence.Mongo.IntegrationTests\\Squirrel.Persistence.Mongo.IntegrationTests.csproj",
+      "tests\\Squirrel.Resiliency\\Squirrel.Resiliency.IntegrationTests\\Squirrel.Resiliency.IntegrationTests.csproj",
+      "tests\\Squirrel.Security\\Squirrel.Security.IntegrationTests\\Squirrel.Security.IntegrationTests.csproj",
+      "tests\\Squirrel.Serialization\\Squirrel.Serialization.IntegrationTests\\Squirrel.Serialization.IntegrationTests.csproj",
+      "tests\\Squirrel.SerilogLogging\\Squirrel.SerilogLogging.IntegrationTests\\Squirrel.SerilogLogging.IntegrationTests.csproj",
+      "tests\\Squirrel.Validation\\Squirrel.Validation.IntegrationTests\\Squirrel.Validation.IntegrationTests.csproj",
+      "tests\\Squirrel.Web\\Squirrel.Web.IntegrationTests\\Squirrel.Web.IntegrationTests.csproj",
+      "tests\\Shared\\Tests.Shared\\Tests.Shared.csproj"
+    ]
+  }
+}

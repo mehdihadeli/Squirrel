@@ -1,11 +1,11 @@
-# CloudNativeKit.Serialization
+# Squirrel.Serialization
 
 Message serialization registration for MemoryPack-based application messaging.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Serialization
+dotnet add package Squirrel.Serialization
 ```
 
 ## Register
@@ -15,4 +15,4 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMemoryPackSerialization();
 ```
 
-Use the serialization contracts from `CloudNativeKit.Abstractions` in messages shared between services. Add generated or explicitly registered MemoryPack formatters for custom types.
+Use the serialization contracts from `Squirrel.Abstractions` in messages shared between services. Add generated or explicitly registered MemoryPack formatters for custom types.

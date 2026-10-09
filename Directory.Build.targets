@@ -3,11 +3,11 @@
   <PropertyGroup Condition="$([System.String]::Copy('$(MSBuildProjectDirectory)').Contains('\src\'))">
     <IsPackable>true</IsPackable>
     <PackageId Condition="'$(PackageId)' == ''">$(MSBuildProjectName)</PackageId>
-    <Authors Condition="'$(Authors)' == ''">CloudNativeKit contributors</Authors>
+    <Authors Condition="'$(Authors)' == ''">Squirrel contributors</Authors>
     <PackageDescription Condition="'$(PackageDescription)' == ''">Reusable .NET building blocks for cloud-native applications.</PackageDescription>
     <PackageTags Condition="'$(PackageTags)' == ''">dotnet;aspnetcore;microservices;cloud-native;infrastructure;persistence;messaging;opentelemetry;wolverine;postgres</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <RepositoryUrl Condition="'$(RepositoryUrl)' == ''">https://github.com/mehdihadeli/CloudNativeKit</RepositoryUrl>
+    <RepositoryUrl Condition="'$(RepositoryUrl)' == ''">https://github.com/mehdihadeli/Squirrel</RepositoryUrl>
     <RepositoryType Condition="'$(RepositoryType)' == ''">git</RepositoryType>
   </PropertyGroup>
 </Project>

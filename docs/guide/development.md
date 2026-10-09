@@ -3,13 +3,13 @@
 ## Repository layout
 
 ```text
-CloudNativeKit/
+Squirrel/
 ├── src/
-│   └── CloudNativeKit.*
+│   └── Squirrel.*
 ├── tests/
-│   ├── CloudNativeKit.Component/
-│   │   ├── CloudNativeKit.Component.UnitTests/
-│   │   └── CloudNativeKit.Component.IntegrationTests/
+│   ├── Squirrel.Component/
+│   │   ├── Squirrel.Component.UnitTests/
+│   │   └── Squirrel.Component.IntegrationTests/
 │   └── Shared/
 └── docs/
 ```
@@ -21,7 +21,7 @@ Every source component has matching unit and integration test projects. Empty pr
 Versions come from `version.json` through Nerdbank.GitVersioning. Release builds should use full Git history and set `PublicRelease=true` when producing stable packages.
 
 ```bash
-dotnet pack src/CloudNativeKit.Core/CloudNativeKit.Core.csproj -c Release -p:PublicRelease=true
+dotnet pack src/Squirrel.Core/Squirrel.Core.csproj -c Release -p:PublicRelease=true
 ```
 
 See [Versioning and releases](./versioning) for the preview, RC, stable, and

@@ -1,10 +1,10 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "CloudNativeKit",
+  title: "Squirrel",
   description: "Reusable .NET building blocks for cloud-native applications.",
   base: process.env.GITHUB_ACTIONS
-    ? `/${process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "CloudNativeKit"}/`
+    ? `/${process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "Squirrel"}/`
     : "/",
   cleanUrls: true,
   appearance: true,
@@ -88,7 +88,7 @@ export default defineConfig({
     search: { provider: "local" },
     footer: {
       message: "Reusable building blocks for cloud-native .NET applications.",
-      copyright: "CloudNativeKit contributors",
+      copyright: "Squirrel contributors",
     },
   },
 });

@@ -1,11 +1,11 @@
-# CloudNativeKit.Persistence.Marten
+# Squirrel.Persistence.Marten
 
 Marten document and event-sourcing integration for PostgreSQL.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Persistence.Marten
+dotnet add package Squirrel.Persistence.Marten
 ```
 
 ## Register
@@ -17,4 +17,4 @@ builder.Services.AddMartenDb(
     scanAssemblies: [typeof(OrderAggregate).Assembly]);
 ```
 
-The integration configures event sourcing, lightweight sessions, schema changes at startup, an asynchronous subscription daemon, and CloudNativeKit event consumers. Configure the connection string and read/write schema options through `MartenOptions`.
+The integration configures event sourcing, lightweight sessions, schema changes at startup, an asynchronous subscription daemon, and Squirrel event consumers. Configure the connection string and read/write schema options through `MartenOptions`.

@@ -4,24 +4,24 @@
 
 - .NET SDK 10
 - A .NET application using Microsoft.Extensions hosting and dependency injection
-- NuGet access to the CloudNativeKit packages
+- NuGet access to the Squirrel packages
 
 ## Install a package
 
 Start with the foundation package, then add the packages that own the capabilities used by your service:
 
 ```bash
-dotnet add package CloudNativeKit.Core
-dotnet add package CloudNativeKit.Web
-dotnet add package CloudNativeKit.OpenTelemetry
-dotnet add package CloudNativeKit.HealthCheck
+dotnet add package Squirrel.Core
+dotnet add package Squirrel.Web
+dotnet add package Squirrel.OpenTelemetry
+dotnet add package Squirrel.HealthCheck
 ```
 
 For example, persistence integrations are separate packages:
 
 ```bash
-dotnet add package CloudNativeKit.Persistence.Marten
-dotnet add package CloudNativeKit.Persistence.EventStoreDB
+dotnet add package Squirrel.Persistence.Marten
+dotnet add package Squirrel.Persistence.EventStoreDB
 ```
 
 ## Register common services
@@ -47,15 +47,15 @@ Package versions are released together and follow the repository version calcula
 ## Build from source
 
 ```bash
-git clone https://github.com/mehdihadeli/CloudNativeKit.git
-cd CloudNativeKit
-dotnet build src/CloudNativeKit.Core/CloudNativeKit.Core.csproj -c Release
+git clone https://github.com/mehdihadeli/Squirrel.git
+cd Squirrel
+dotnet build src/Squirrel.Core/Squirrel.Core.csproj -c Release
 ```
 
 Run the existing test projects with:
 
 ```bash
-dotnet build tests/CloudNativeKit.Core/CloudNativeKit.Core.UnitTests/CloudNativeKit.Core.UnitTests.csproj -c Release
+dotnet build tests/Squirrel.Core/Squirrel.Core.UnitTests/Squirrel.Core.UnitTests.csproj -c Release
 ```
 
 Every component has an empty `UnitTests` and `IntegrationTests` project ready for future coverage.

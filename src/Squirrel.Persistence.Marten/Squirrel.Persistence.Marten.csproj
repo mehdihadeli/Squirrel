@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Squirrel.Core\Squirrel.Core.csproj" />
+    <ProjectReference Include="..\Squirrel.OpenTelemetry\Squirrel.OpenTelemetry.csproj" />
+    <ProjectReference Include="..\Squirrel.Persistence.EfCore.Postgres\Squirrel.Persistence.EfCore.Postgres.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Marten" />
+  </ItemGroup>
+
+</Project>
