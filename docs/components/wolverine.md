@@ -1,11 +1,11 @@
-# CloudNativeKit.Integration.Wolverine
+# Squirrel.Integration.Wolverine
 
 Wolverine and RabbitMQ integration for commands, events, message persistence, and durable messaging.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Integration.Wolverine
+dotnet add package Squirrel.Integration.Wolverine
 ```
 
 ## Register
@@ -17,6 +17,6 @@ builder.AddWolverineEventBus(
     durabilityConnectionStringName: "messaging");
 ```
 
-The package discovers handlers from the supplied assemblies, configures RabbitMQ, provisions message topology, and connects CloudNativeKit event-bus abstractions to Wolverine. Configure the RabbitMQ connection through `ConnectionStrings:rabbitmq` or the package options.
+The package discovers handlers from the supplied assemblies, configures RabbitMQ, provisions message topology, and connects Squirrel event-bus abstractions to Wolverine. Configure the RabbitMQ connection through `ConnectionStrings:rabbitmq` or the package options.
 
 Use `PublishToPrimaryExchange<TMessage>` and `ListenToPrimaryExchange<TMessage>` when custom topology is needed.

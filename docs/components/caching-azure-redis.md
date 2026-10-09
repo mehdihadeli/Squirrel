@@ -1,16 +1,16 @@
-# CloudNativeKit.Caching.AzureRedis
+# Squirrel.Caching.AzureRedis
 
-Azure Redis connection and cache integration for CloudNativeKit caching.
+Azure Redis connection and cache integration for Squirrel caching.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Caching.AzureRedis
+dotnet add package Squirrel.Caching.AzureRedis
 ```
 
 ## Use it with
 
-Install this package together with `CloudNativeKit.Caching`. Configure the Redis connection using the options expected by the package, then call the shared caching registration from `CloudNativeKit.Caching`.
+Install this package together with `Squirrel.Caching`. Configure the Redis connection using the options expected by the package, then call the shared caching registration from `Squirrel.Caching`.
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);

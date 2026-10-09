@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Squirrel.Integration.Wolverine\Squirrel.Integration.Wolverine.csproj" />
+    <ProjectReference Include="..\..\Shared\Tests.Shared\Tests.Shared.csproj" />
+  </ItemGroup>
+</Project>

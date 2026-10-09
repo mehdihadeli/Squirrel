@@ -1,11 +1,11 @@
-# CloudNativeKit.AspireIntegrations
+# Squirrel.AspireIntegrations
 
 .NET Aspire AppHost resources for local and containerized development infrastructure.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.AspireIntegrations
+dotnet add package Squirrel.AspireIntegrations
 ```
 
 ## Example

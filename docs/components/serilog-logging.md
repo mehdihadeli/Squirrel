@@ -1,11 +1,11 @@
-# CloudNativeKit.SerilogLogging
+# Squirrel.SerilogLogging
 
 Serilog setup, request enrichment, baggage enrichment, and structured logging conventions.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.SerilogLogging
+dotnet add package Squirrel.SerilogLogging
 ```
 
 ## Register

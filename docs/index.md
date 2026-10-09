@@ -1,10 +1,10 @@
 ---
 layout: home
-title: CloudNativeKit
+title: Squirrel
 titleTemplate: Reusable cloud-native .NET building blocks
 description: Reusable .NET libraries for cloud-native applications.
 hero:
-  name: CloudNativeKit
+  name: Squirrel
   text: Building blocks for cloud-native .NET
   tagline: Composable libraries for messaging, persistence, observability, resilience, web APIs, and application infrastructure.
   actions:
@@ -23,11 +23,11 @@ features:
     details: Centralized package management, analyzers, modern hosting APIs, and cloud-native integrations.
   - icon: "03"
     title: Open and reusable
-    details: Source-first libraries published independently as CloudNativeKit NuGet packages.
+    details: Source-first libraries published independently as Squirrel NuGet packages.
 ---
 
-## What is CloudNativeKit?
+## What is Squirrel?
 
-CloudNativeKit is a family of reusable .NET libraries extracted from a production food-delivery microservices platform. The packages provide common application infrastructure without forcing a single service architecture.
+Squirrel is a family of reusable .NET libraries extracted from a production food-delivery microservices platform. The packages provide common application infrastructure without forcing a single service architecture.
 
 Start with the [quickstart guide](/guide/quickstart), then browse the [package family](/reference/packages).

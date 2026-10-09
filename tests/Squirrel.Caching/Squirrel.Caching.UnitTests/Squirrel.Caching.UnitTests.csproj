@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Squirrel.Caching\Squirrel.Caching.csproj" />
+    <ProjectReference Include="..\..\Shared\Tests.Shared\Tests.Shared.csproj" />
+  </ItemGroup>
+</Project>

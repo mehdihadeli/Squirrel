@@ -1,11 +1,11 @@
-# CloudNativeKit.Core
+# Squirrel.Core
 
 Application and domain building blocks built on the abstractions package.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Core
+dotnet add package Squirrel.Core
 ```
 
 ## Register

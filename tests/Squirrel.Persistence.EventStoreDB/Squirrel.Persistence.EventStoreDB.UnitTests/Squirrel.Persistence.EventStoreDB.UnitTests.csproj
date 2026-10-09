@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Squirrel.Persistence.EventStoreDB\Squirrel.Persistence.EventStoreDB.csproj" />
+    <ProjectReference Include="..\..\Shared\Tests.Shared\Tests.Shared.csproj" />
+  </ItemGroup>
+</Project>

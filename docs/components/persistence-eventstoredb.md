@@ -1,11 +1,11 @@
-# CloudNativeKit.Persistence.EventStoreDB
+# Squirrel.Persistence.EventStoreDB
 
 EventStoreDB client, event-sourcing, subscriptions, tracing, and health-check integration.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Persistence.EventStoreDB
+dotnet add package Squirrel.Persistence.EventStoreDB
 ```
 
 ## Register

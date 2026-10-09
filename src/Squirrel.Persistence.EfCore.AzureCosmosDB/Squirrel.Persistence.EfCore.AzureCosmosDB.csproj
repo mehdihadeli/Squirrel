@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Squirrel.Core\Squirrel.Core.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup Label="Aspire Packages">
+    <!--https://learn.microsoft.com/en-us/dotnet/aspire/database/azure-cosmos-db-entity-framework-integration-->
+    <PackageReference Include="Aspire.Hosting.Azure.CosmosDB" />
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.Cosmos" />
+  </ItemGroup>
+</Project>

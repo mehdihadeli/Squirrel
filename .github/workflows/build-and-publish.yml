@@ -31,16 +31,16 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore source projects
-        run: dotnet restore CloudNativeKit.slnx
+        run: dotnet restore Squirrel.slnx
 
       - name: Build
-        run: dotnet build CloudNativeKit.slnx --configuration Release --no-restore -p:PublicRelease=true
+        run: dotnet build Squirrel.slnx --configuration Release --no-restore -p:PublicRelease=true
 
       - name: Run unit tests
-        run: dotnet test --solution CloudNativeKit.UnitTests.slnf --configuration Release --no-build --no-restore -p:SkipVersion=true -p:RunAnalyzers=false
+        run: dotnet test --solution Squirrel.UnitTests.slnf --configuration Release --no-build --no-restore -p:SkipVersion=true -p:RunAnalyzers=false
 
       - name: Run integration tests
-        run: dotnet test --solution CloudNativeKit.IntegrationTests.slnf --configuration Release --no-build --no-restore -p:SkipVersion=true -p:RunAnalyzers=false
+        run: dotnet test --solution Squirrel.IntegrationTests.slnf --configuration Release --no-build --no-restore -p:SkipVersion=true -p:RunAnalyzers=false
 
   calculate-version:
     name: Calculate release version
@@ -68,7 +68,7 @@ jobs:
         id: version
         shell: bash
         run: |
-          NBGV="$RUNNER_TEMP/nbgv/nbgv" bash ./calculate-version.sh
+          NBGV="$RUNNER_TEMP/nbgv/nbgv" bash ./scripts/calculate-version.sh
 
   publish:
     name: Publish packages and release assets
@@ -98,7 +98,7 @@ jobs:
             dotnet restore "$project"
           done
 
-      - name: Pack CloudNativeKit packages
+      - name: Pack Squirrel packages
         run: |
           mkdir -p artifacts
           for project in src/*/*.csproj; do

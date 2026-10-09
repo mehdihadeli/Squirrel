@@ -1,11 +1,11 @@
-# CloudNativeKit.Resiliency
+# Squirrel.Resiliency
 
 Service discovery and HTTP resilience defaults using the Microsoft resilience stack.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Resiliency
+dotnet add package Squirrel.Resiliency
 ```
 
 ## Register

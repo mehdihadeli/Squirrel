@@ -1,11 +1,11 @@
-# CloudNativeKit.Persistence.Mongo
+# Squirrel.Persistence.Mongo
 
 MongoDB context, repository, unit-of-work, health-check, and tracing integration.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Persistence.Mongo
+dotnet add package Squirrel.Persistence.Mongo
 ```
 
 ## Register

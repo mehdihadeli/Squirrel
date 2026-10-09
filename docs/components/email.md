@@ -1,11 +1,11 @@
-# CloudNativeKit.Email
+# Squirrel.Email
 
 Email sender abstractions and SendGrid-backed implementation.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.Email
+dotnet add package Squirrel.Email
 ```
 
 ## Register

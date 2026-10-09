@@ -1,11 +1,11 @@
-# CloudNativeKit.OpenTelemetry
+# Squirrel.OpenTelemetry
 
 OpenTelemetry tracing, metrics, logging, and common instrumentation setup.
 
 ## Install
 
 ```bash
-dotnet add package CloudNativeKit.OpenTelemetry
+dotnet add package Squirrel.OpenTelemetry
 ```
 
 ## Register
