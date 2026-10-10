@@ -1,7 +1,7 @@
-using Squirrel.Core.Extensions;
-using Squirrel.Core.Web.Extensions;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
+using Squirrel.Core.Extensions;
+using Squirrel.Core.Web.Extensions;
 
 namespace Squirrel.HealthCheck;
 
@@ -28,15 +28,18 @@ public static class DependencyInjectionExtensions
             )
         );
 
-        builder
+        var healthChecks = builder
             .Services.AddHealthChecks()
             // Add a default liveness check to ensure app is responsive
             .AddCheck("self", () => HealthCheckResult.Healthy(), ["live"])
             .AddDiskStorageHealthCheck(_ => { }, tags: ["live"])
             .AddPingHealthCheck(_ => { }, tags: ["live"])
             .AddPrivateMemoryHealthCheck(512 * 1024 * 1024, tags: ["live"])
-            .AddDnsResolveHealthCheck(_ => { }, tags: ["live"])
-            .AddResourceUtilizationHealthCheck(o =>
+            .AddDnsResolveHealthCheck(_ => { }, tags: ["live"]);
+
+        if (!builder.Environment.IsTest())
+        {
+            healthChecks.AddResourceUtilizationHealthCheck(o =>
             {
                 o.CpuThresholds = new ResourceUsageThresholds
                 {
@@ -51,9 +54,6 @@ public static class DependencyInjectionExtensions
                 };
             });
 
-        // HealthChecks UI spins up a background hosted service that is not needed in integration tests.
-        if (!builder.Environment.IsTest())
-        {
             // https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks/#healthcheckui
             builder.Services.AddHealthChecksUI().AddInMemoryStorage();
         }
