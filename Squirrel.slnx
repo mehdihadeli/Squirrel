@@ -8,6 +8,7 @@
   <Project Path="src/Squirrel.Email/Squirrel.Email.csproj" />
   <Project Path="src/Squirrel.HealthCheck/Squirrel.HealthCheck.csproj" />
   <Project Path="src/Squirrel.Integration.Wolverine/Squirrel.Integration.Wolverine.csproj" />
+  <Project Path="src/Squirrel.Integration.Wolverine.InMemory/Squirrel.Integration.Wolverine.InMemory.csproj" />
   <Project Path="src/Squirrel.OpenApi/Squirrel.OpenApi.csproj" />
   <Project Path="src/Squirrel.OpenTelemetry/Squirrel.OpenTelemetry.csproj" />
   <Project Path="src/Squirrel.Persistence.EfCore.AzureCosmosDB/Squirrel.Persistence.EfCore.AzureCosmosDB.csproj" />
