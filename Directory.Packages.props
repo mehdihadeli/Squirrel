@@ -208,7 +208,7 @@
     <PackageVersion Include="Testcontainers.MsSql" Version="4.8.1" />
     <PackageVersion Include="Testcontainers.PostgreSql" Version="4.8.1" />
     <PackageVersion Include="Testcontainers.RabbitMq" Version="4.8.1" />
-    <PackageVersion Include="Testcontainers.Redis" Version="4.6.0" />
+    <PackageVersion Include="Testcontainers.Redis" Version="4.8.1" />
     <PackageVersion Include="WebMotions.Fake.Authentication.JwtBearer" Version="9.0.0" />
     <PackageVersion Include="WireMock.Net" Version="1.5.13" />
     <PackageVersion Include="xunit.v3.extensibility.core" Version="3.2.2" />

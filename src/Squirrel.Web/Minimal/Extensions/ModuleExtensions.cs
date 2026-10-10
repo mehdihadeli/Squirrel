@@ -1,13 +1,56 @@
 using System.Reflection;
 using Squirrel.Abstractions.Web.Module;
 using Squirrel.Core.Extensions;
+using Squirrel.Web.Module;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
 
 namespace Squirrel.Web.Minimal.Extensions;
 
 public static class ModuleExtensions
 {
+    public static WebApplicationBuilder AddModulesServices(
+        this WebApplicationBuilder builder,
+        bool useCompositionRootForModules,
+        params Assembly[] scanAssemblies
+    )
+    {
+        if (!useCompositionRootForModules)
+            return builder.AddModulesServices(scanAssemblies);
+
+        var moduleTypes = scanAssemblies.SelectMany(assembly => assembly.GetLoadableTypes())
+            .Where(type => type is { IsClass: true, IsAbstract: false }
+                && typeof(IModuleConfiguration).IsAssignableFrom(type)
+                && type.GetConstructor(Type.EmptyTypes) != null);
+
+        foreach (var moduleType in moduleTypes)
+        {
+            var module = (IModuleConfiguration)Activator.CreateInstance(moduleType!)!;
+            var moduleBuilder = WebApplication.CreateBuilder(new WebApplicationOptions
+            {
+                EnvironmentName = builder.Environment.EnvironmentName,
+                ContentRootPath = builder.Environment.ContentRootPath,
+                ApplicationName = builder.Environment.ApplicationName,
+            });
+            moduleBuilder.Configuration.AddConfiguration(builder.Configuration);
+            foreach (var descriptor in builder.Services)
+                moduleBuilder.Services.Add(descriptor);
+
+            module.AddModuleServices(moduleBuilder);
+            var provider = moduleBuilder.Services.BuildServiceProvider(new ServiceProviderOptions
+            {
+                ValidateScopes = true,
+            });
+            var root = new CompositionRoot(provider, module);
+            CompositionRootRegistry.Add(root);
+            builder.Services.AddSingleton<IModuleConfiguration>(module);
+            builder.Services.AddSingleton<ICompositionRoot>(root);
+        }
+
+        return builder;
+    }
+
     public static WebApplicationBuilder AddModulesServices(
         this WebApplicationBuilder webApplicationBuilder,
         params Assembly[] scanAssemblies
@@ -76,6 +119,7 @@ public static class ModuleExtensions
 
     public static async Task<WebApplication> ConfigureModules(this WebApplication app)
     {
+        CompositionRootRegistry.SetRootServiceProvider(app.Services);
         var moduleConfigurations = app.Services.GetServices<IModuleConfiguration>();
         var sharedModulesConfigurations = app.Services.GetServices<ISharedModulesConfiguration>();
 
